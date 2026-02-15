@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency in Delhi NCR | ROI-Driven Growth</title>
+    <meta name="description"
+        content="Leading Digital Marketing Agency in Delhi NCR helping E-commerce, Healthcare, and Fashion brands scale with SEO, PPC, and Performance Marketing.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Parkinsans', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#C4A484',
+                            'gold-light': '#d4b896',
+                            'warm-dark': '#4a3d2f',
+                        },
+                        cream: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-accordion-item {
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-accordion-item:not(.active):hover {
+            flex: 1.5;
+        }
+
+        .service-accordion-item.active {
+            cursor: default;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        /* Stacked Cards Section Styles */
+        .cards-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 1000px;
+            height: 60vh;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Default Card Colors (can be overridden by JS or inline) */
+        .card:nth-child(1) {
+            background-color: #1a1a1a;
+            z-index: 1;
+        }
+
+        .card:nth-child(2) {
+            background-color: #C4A484;
+            color: black;
+            z-index: 2;
+        }
+
+        .card:nth-child(3) {
+            background-color: #fff;
+            color: black;
+            z-index: 3;
+        }
+
+        .card:nth-child(4) {
+            background-color: #333;
+            z-index: 4;
+        }
+
+        .card:nth-child(5) {
+            background-color: #C4A484;
+            color: black;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black font-sans antialiased overflow-x-hidden">
+
+    <!-- Header -->
+    <header
+        class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg transition-all duration-300"
+        id="header">
+        <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#"
+                class="text-xl md:text-2xl font-black tracking-tighter hover:text-[#C4A484] transition-colors leading-none">
+                DIGITAL <span class="text-[#C4A484]">MARKETING</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#about" class="text-sm font-semibold hover:text-[#C4A484] transition-colors">ABOUT</a>
+                <a href="#services" class="text-sm font-semibold hover:text-[#C4A484] transition-colors">SERVICES</a>
+                <a href="#industries"
+                    class="text-sm font-semibold hover:text-[#C4A484] transition-colors">INDUSTRIES</a>
+                <a href="#results" class="text-sm font-semibold hover:text-[#C4A484] transition-colors">RESULTS</a>
+                <a href="#contact"
+                    class="px-5 py-2 bg-black text-white text-sm font-bold rounded-full hover:bg-[#C4A484] transition-colors">
+                    GROWTH CALL
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl focus:outline-none" id="mobile-menu-btn">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center gap-8 rounded-none md:rounded-3xl"
+            id="mobile-menu">
+            <button class="absolute top-6 right-6 text-3xl" id="close-menu-btn">✕</button>
+            <a href="#about" class="text-2xl font-bold mobile-link">ABOUT</a>
+            <a href="#services" class="text-2xl font-bold mobile-link">SERVICES</a>
+            <a href="#industries" class="text-2xl font-bold mobile-link">INDUSTRIES</a>
+            <a href="#results" class="text-2xl font-bold mobile-link">RESULTS</a>
+            <a href="#contact" class="text-2xl font-bold mobile-link">CONTACT</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section - Redesigned -->
+        <section class="relative min-h-[90vh] bg-black overflow-hidden flex items-center justify-center">
+            <!-- Background with enhanced overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=2000"
+                    alt="Background" class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90"></div>
+            </div>
+
+            <!-- Decorative floating elements -->
+            <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-[#C4A484]/10 rounded-full blur-3xl animate-float">
+                </div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-[#C4A484]/10 rounded-full blur-3xl animate-float"
+                    style="animation-delay: 2s;"></div>
+                <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-white/5 rounded-full blur-2xl animate-float"
+                    style="animation-delay: 1s;"></div>
+            </div>
+
+            <div class="container mx-auto px-6 text-center relative z-10 text-white py-20">
+                <!-- Trust Badge -->
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-6 animate-fade-in-up">
+                    <svg class="w-4 h-4 text-[#C4A484]" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <span class="text-xs md:text-sm font-semibold text-white">Trusted by 100+ Brands in Delhi NCR</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1
+                    class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tighter leading-[0.95] animate-fade-in-up">
+                    ROI-Driven <br class="hidden sm:block">
+                    <span class="relative inline-block mt-2">
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-[#C4A484] via-[#d4b896] to-[#C4A484] italic font-serif animate-gradient-x">
+                            Digital Marketing
+                        </span>
+                    </span>
+                    <br>
+                    <span class="text-white">Agency</span>
+                    <span class="block text-3xl md:text-5xl lg:text-6xl mt-4 text-gray-300">in Delhi NCR</span>
+                </h1>
+
+                <!-- Subheading -->
+                <p class="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light mb-6 animate-fade-in-up"
+                    style="animation-delay: 0.2s;">
+                    We help <span class="text-[#C4A484] font-semibold">E-commerce</span>,
+                    <span class="text-[#C4A484] font-semibold">Healthcare</span>, and
+                    <span class="text-[#C4A484] font-semibold">Fashion</span> brands scale revenue through
+                    data-driven strategies that deliver <span class="text-white font-semibold">measurable
+                        results</span>.
+                </p>
+
+                <!-- Description -->
+                <p class="text-sm md:text-base text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12 animate-fade-in-up hidden md:block"
+                    style="animation-delay: 0.3s;">
+                    Combine performance marketing, SEO expertise, and creative storytelling to dominate your industry.
+                    Whether you're aiming for higher ROAS, patient growth, or brand visibility—our strategies drive
+                    real, trackable success.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
+                    style="animation-delay: 0.4s;">
+                    <!-- Primary CTA -->
+                    <a href="#contact"
+                        class="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#C4A484] to-[#8B7355] text-white text-base md:text-lg font-bold rounded-full hover:shadow-2xl hover:shadow-[#C4A484]/50 hover:scale-105 transition-all duration-300 shadow-xl">
+                        <span>Book Free Strategy Call</span>
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+
+                    <!-- Secondary CTA -->
+                    <a href="#industries"
+                        class="group inline-flex items-center gap-3 px-10 py-5 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white text-base md:text-lg font-bold rounded-full hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all duration-300 shadow-lg">
+                        <span>View Case Studies</span>
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="mt-16 flex flex-wrap justify-center gap-8 md:gap-12 text-center animate-fade-in-up"
+                    style="animation-delay: 0.5s;">
+                    <div class="flex flex-col items-center">
+                        <div class="text-3xl md:text-4xl font-black text-[#C4A484] mb-1">100+</div>
+                        <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Happy Clients</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-3xl md:text-4xl font-black text-[#C4A484] mb-1">300%</div>
+                        <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Avg ROI Increase</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-3xl md:text-4xl font-black text-[#C4A484] mb-1">5M+</div>
+                        <div class="text-xs md:text-sm text-gray-400 uppercase tracking-wider">Revenue Generated</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white border-b border-gray-100 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-12 gap-12 items-start relative z-10">
+
+                    <!-- Left Column: Typography & Intro -->
+                    <div class="lg:col-span-4 flex flex-col justify-between h-full relative z-20">
+                        <div>
+                            <h2
+                                class="text-3xl md:text-6xl font-black leading-[0.85] tracking-tighter mb-12 mix-blend-difference text-black">
+                                ABOUT <br> US
+                            </h2>
+                            <h3 class="text-sm font-bold uppercase tracking-widest text-[#c69563] mb-6">
+                                ROI-Driven Growth Partners
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed max-w-xs">
+                                Modern Marketing: Strategies featuring data-driven insights, AI-powered optimization,
+                                and high-impact creative storytelling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Middle Column: Large Image -->
+                    <div class="lg:col-span-4">
+                        <div class="relative rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
+                                alt="Office Interior"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Small Image & Philosophy -->
+                    <div class="lg:col-span-4 flex flex-col gap-12 mt-12 lg:mt-0">
+                        <div class="rounded-[2.5rem] overflow-hidden aspect-[16/10] shadow-xl group">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+                                alt="Team Meeting"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+
+                        <div>
+                            <h3 class="text-3xl font-black mb-6 tracking-tight">Our Philosophy</h3>
+                            <p class="text-gray-600 leading-relaxed text-sm">
+                                At Digital Marketing Agency, we believe in building scalable growth systems. We don't
+                                just chase vanity metrics; we create luxurious, personalized marketing ecosystems that
+                                reflect our clients' ambition and drive measurable revenue.
+                            </p>
+
+                            <div class="mt-8 flex flex-wrap gap-3">
+                                <span
+                                    class="px-4 py-2 bg-gray-50 rounded-full text-xs font-bold border border-gray-100">Data
+                                    Analytics</span>
+                                <span
+                                    class="px-4 py-2 bg-gray-50 rounded-full text-xs font-bold border border-gray-100">AI
+                                    Insights</span>
+                                <span
+                                    class="px-4 py-2 bg-gray-50 rounded-full text-xs font-bold border border-gray-100">ROI
+                                    Focused</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Founder Section -->
+        <section id="founder" class="py-16 bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <!-- Beige Container -->
+                <div class="bg-[#F2F0ED] rounded-[3rem] p-8 md:p-12 relative overflow-hidden">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0 relative z-10">
+
+                        <!-- Principal 1 (Left) -->
+                        <div class="flex flex-col items-center z-10 md:w-1/3">
+                            <div
+                                class="rounded-2xl overflow-hidden h-[400px] w-full max-w-[300px] shadow-sm mb-6 filter grayscale-[20%]">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600"
+                                    alt="Jay Britto" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-2xl font-black text-black mb-1 font-sans">JAY BRITTO</h3>
+                                <p class="text-gray-500 text-xs font-bold tracking-widest uppercase">FOUNDER AND
+                                    PRINCIPAL</p>
+                            </div>
+                        </div>
+
+                        <!-- Central Content (Middle) -->
+                        <div class="md:w-1/3 flex justify-center z-20 md:-mx-12">
+                            <div class="bg-white rounded-[2.5rem] p-8 shadow-xl w-full max-w-sm text-center relative">
+                                <h2
+                                    class="text-3xl md:text-6xl font-black text-black mb-6 uppercase tracking-tight leading-[0.9] font-sans">
+                                    MEET THE<br>PRINCIPALS
+                                </h2>
+
+                                <!-- Pill Images -->
+                                <div class="flex justify-center gap-2 mb-6">
+                                    <div class="h-8 w-16 rounded-full overflow-hidden bg-gray-200"><img
+                                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=200"
+                                            class="w-full h-full object-cover"></div>
+                                    <div class="h-8 w-16 rounded-full overflow-hidden bg-gray-200"><img
+                                            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=80&w=200"
+                                            class="w-full h-full object-cover"></div>
+                                    <div class="h-8 w-16 rounded-full overflow-hidden bg-gray-200"><img
+                                            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=200"
+                                            class="w-full h-full object-cover"></div>
+                                </div>
+
+                                <p class="text-gray-600 text-xs leading-relaxed font-medium">
+                                    As principal and licensed designers, the founders oversee the day-to-day operations
+                                    of
+                                    our agency and the design and manufacture of our firm's custom strategies and
+                                    award-winning campaigns.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Principal 2 (Right) -->
+                        <div class="flex flex-col items-center z-10 md:w-1/3">
+                            <div
+                                class="rounded-2xl overflow-hidden h-[400px] w-full max-w-[300px] shadow-sm mb-6 filter grayscale-[20%]">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600"
+                                    alt="David Charette" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-2xl font-black text-black mb-1 font-sans">DAVID CHARETTE</h3>
+                                <p class="text-gray-500 text-xs font-bold tracking-widest uppercase">FOUNDER AND
+                                    PRINCIPAL</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By The Giants Section -->
+        <section id="trusted-by" class="py-16 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-6 text-center mb-16 relative z-10">
+                <p class="text-xs font-bold tracking-[0.2em] text-gray-400 mb-4 uppercase">Global Ecosystem</p>
+                <h2 class="text-3xl md:text-6xl font-black text-black tracking-tighter mb-4 leading-none">
+                    TRUSTED BY <br>
+                    <span class="font-serif italic text-[#C4A484]">THE GIANTS</span>
+                </h2>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm md:text-base font-light">
+                    We partner with the world's most ambitious brands to define what's possible in the digital age.
+                </p>
+            </div>
+
+            <!-- Marquee Container -->
+            <div class="relative w-full overflow-hidden marquee-gradient-mask">
+                <!-- Row 1 (Left) -->
+                <div class="flex gap-6 w-max animate-marquee mb-6 hover:[animation-play-state:paused]">
+                    <!-- Original Set -->
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/google.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/amazon.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/shopify.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/microsoft.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/hubspot.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/salesforce.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Duplicate Set for Seamless Loop -->
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/google.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/amazon.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/shopify.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/microsoft.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/hubspot.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/salesforce.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                </div>
+
+                <!-- Row 2 (Right - Reverse) -->
+                <div class="flex gap-6 w-max animate-marquee-reverse hover:[animation-play-state:paused]">
+                    <!-- Original Set -->
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/adobe.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/netflix.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/airbnb.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/uber.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/spotify.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/tesla.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Duplicate Set -->
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/adobe.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/netflix.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/airbnb.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/uber.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/spotify.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                    <div
+                        class="w-64 h-32 bg-white rounded-2xl shadow-lg flex items-center justify-center border border-gray-50">
+                        <img src="https://logo.clearbit.com/tesla.com"
+                            class="h-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Services Grid -->
+        <section id="services" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <!-- Heading -->
+                <div class="mb-16">
+                    <span class="text-[#c69563] font-mono text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Our
+                        Capabilities</span>
+                    <h2 class="text-3xl md:text-6xl font-black tracking-tighter uppercase leading-none">
+                        DIGITAL <br>
+                        MARKETING
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Grid Item 1: SEO -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1633533452330-d46387062402?auto=format&fit=crop&q=80&w=800"
+                            alt="SEO"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">SEO
+                                    OPTIMIZATION</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Ranking &<br>Traffic</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Boost your visibility with data-driven SEO strategies that drive organic growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 2: Paid Ads -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=800"
+                            alt="Ads"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">PAID
+                                    ADVERTISING</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">PPC &<br>Campaigns</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Maximize ROI with targeted ad campaigns on Google, Meta, and LinkedIn.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 3: Social Media -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&q=80&w=800"
+                            alt="Social"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">SOCIAL
+                                    MEDIA</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Brand &<br>Community</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Build a loyal community and go viral with engaging social content.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 4: Content Marketing -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=800"
+                            alt="Content"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">CONTENT
+                                    MARKETING</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Storytelling<br>& Value</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Drive action with compelling storytelling and value-driven content.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 5: Email Marketing -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&q=80&w=800"
+                            alt="Email"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">EMAIL
+                                    MARKETING</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Retention &<br>Loyalty</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Nurture leads with personalized automated campaigns that convert.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 6: AI & Automation -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800"
+                            alt="AI"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">AI
+                                    & AUTOMATION</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Future &<br>Scale</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Streamline operations with cutting-edge AI solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 7: YouTube Marketing -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1626544827763-d516dce335ca?auto=format&fit=crop&q=80&w=800"
+                            alt="YouTube"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 transition-all duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">YOUTUBE
+                                    MARKETING</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Video &<br>Growth</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed max-h-0 group-hover:max-h-[200px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 max-w-[90%]">
+                                Grow your channel with video SEO and strategy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 8: Web Development -->
+                    <div
+                        class="relative rounded-[2.5rem] overflow-hidden h-[300px] group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=800"
+                            alt="Web Dev"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-8 translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                            <div class="mb-3">
+                                <span
+                                    class="text-[#c69563] text-xs font-bold tracking-widest uppercase bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">WEB
+                                    DEVELOPMENT</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white mb-3">Speed &<br>Conversion</h3>
+                            <p
+                                class="text-gray-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-w-[90%]">
+                                High-performance websites built for growth.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        </div> <!-- Safety close -->
+        <!-- Industries / Case Studies -->
+        <section id="industries" class="py-16 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-10">
+                    <span
+                        class="text-[#c69563] font-mono text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Industries</span>
+                    <h2
+                        class="text-3xl md:text-6xl font-black text-black tracking-tighter leading-tight mb-6 opacity-0 reveal-on-scroll">
+                        Specialized Marketing for <br> High-Growth Industries
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Industry 1 -->
+                    <div
+                        class="relative rounded-[2rem] overflow-hidden min-h-[400px] border border-zinc-800 group hover:shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800"
+                            alt="E-commerce"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500">
+                        </div>
+
+                        <!-- Slide-in Content -->
+                        <div
+                            class="absolute inset-0 bg-zinc-900/95 p-8 md:p-10 flex flex-col justify-between translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                            <div>
+                                <h4 class="text-3xl font-bold mb-4 text-[#d4b896] font-serif italic">E-commerce
+                                    <br>
+                                    Marketing
+                                </h4>
+                                <div class="h-0.5 w-12 bg-white/20 mb-6"></div>
+                                <p class="text-sm md:text-base text-gray-400 leading-relaxed">Increase sales,
+                                    improve ROAS,
+                                    and scale profitably with performance-driven e-commerce marketing campaigns
+                                    tailored for
+                                    online stores.</p>
+                            </div>
+                            <div class="mt-8 text-6xl">🛒</div>
+                        </div>
+                    </div>
+
+                    <!-- Industry 2 -->
+                    <div class="relative rounded-[2rem] overflow-hidden min-h-[400px] border border-[#fde68a] group hover:shadow-2xl"
+                        style="transition-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800"
+                            alt="Healthcare"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500">
+                        </div>
+
+                        <!-- Slide-in Content -->
+                        <div
+                            class="absolute inset-0 bg-[#fffbeb]/95 p-8 md:p-10 flex flex-col justify-between translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                            <div>
+                                <h4 class="text-3xl font-bold mb-4 text-[#b45309] font-serif italic">Healthcare
+                                    & <br>
+                                    Hospitals</h4>
+                                <div class="h-0.5 w-12 bg-black/10 mb-6"></div>
+                                <p class="text-sm md:text-base text-gray-600 leading-relaxed">Attract more
+                                    patients and
+                                    build trust with compliant, ethical healthcare marketing strategies designed
+                                    for clinics
+                                    and hospitals in Delhi NCR.</p>
+                            </div>
+                            <div class="mt-8 text-6xl">🏥</div>
+                        </div>
+                    </div>
+
+                    <!-- Industry 3 -->
+                    <div class="relative rounded-[2rem] overflow-hidden min-h-[400px] border border-[#fde68a] group hover:shadow-2xl"
+                        style="transition-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800"
+                            alt="Fashion"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500">
+                        </div>
+
+                        <!-- Slide-in Content -->
+                        <div
+                            class="absolute inset-0 bg-[#fef3c7]/95 p-8 md:p-10 flex flex-col justify-between translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                            <div>
+                                <h4 class="text-3xl font-bold mb-4 text-[#b45309] font-serif italic">Fashion &
+                                    <br> Apparel
+                                </h4>
+                                <div class="h-0.5 w-12 bg-black/10 mb-6"></div>
+                                <p class="text-sm md:text-base text-gray-600 leading-relaxed">Boost brand
+                                    visibility, drive
+                                    conversions, and build loyal communities for fashion and suit brands through
+                                    creative
+                                    and performance marketing.</p>
+                            </div>
+                            <div class="mt-8 text-6xl">👗</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POWERED BY INTELLIGENCE Section (Expandable Accordion) -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <!-- Heading -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 mb-8 md:mb-12">
+                    <h2 class="text-3xl md:text-6xl font-black tracking-tighter uppercase">
+                        POWERED BY <br>
+                        <span class="text-[#c69563] italic font-serif">INTELLIGENCE.</span>
+                    </h2>
+                    <p class="text-gray-500 max-w-md text-right text-sm md:text-base">
+                        Unlock the potential of next-gen digital marketing strategies to scale your presence 10x
+                        faster.
+                    </p>
+                </div>
+
+                <!-- Expandable Cards Container -->
+                <div class="flex flex-col md:flex-row gap-4 h-[300px] min-h-[400px]">
+
+                    <!-- Service 1: AI Websites -->
+                    <div class="service-accordion-item relative overflow-hidden rounded-[2rem] cursor-pointer transition-[flex] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-[3] group active"
+                        data-id="1">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Websites"
+                            class="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-[.active]:scale-100 scale-125">
+                        <div
+                            class="absolute inset-0 bg-black/60 group-[.active]:bg-black/40 transition-colors duration-500">
+                        </div>
+
+                        <!-- Expanded Content -->
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-[.active]:opacity-100 transition-opacity duration-500 delay-200">
+                            <div>
+                                <span class="text-xs font-bold tracking-widest text-white/80 mb-2 block uppercase">AI
+                                    Websites</span>
+                                <h3 class="text-4xl font-bold text-white mb-2">AI Websites</h3>
+                                <p class="text-gray-200 text-sm mb-4 max-w-md">Generative high-conversion layouts
+                                    optimized for speed.</p>
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> SEO
+                                        Optimized</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Instant
+                                        Deploy</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> A/B
+                                        Testing</span>
+                                </div>
+                                <button
+                                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-black">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Collapsed Content -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-100 group-[.active]:opacity-0 transition-opacity duration-500">
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                            <h3
+                                class="text-lg font-bold text-gray-400 tracking-widest uppercase vertical-text whitespace-nowrap rotate-180">
+                                AI Websites</h3>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: AI Video Gen -->
+                    <div class="service-accordion-item relative overflow-hidden rounded-[2rem] cursor-pointer transition-[flex] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-[1] group bg-gray-50 border border-gray-100 hover:flex-[1.5]"
+                        data-id="2">
+                        <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Video Gen"
+                            class="absolute inset-0 h-full w-full object-cover opacity-0 group-[.active]:opacity-60 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-[.active]:opacity-100 transition-opacity duration-500">
+                        </div>
+
+                        <!-- Expanded Content -->
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-[.active]:opacity-100 transition-opacity duration-500 delay-200">
+                            <div>
+                                <span class="text-xs font-bold tracking-widest text-white/80 mb-2 block uppercase">AI
+                                    Video
+                                    Gen</span>
+                                <h3 class="text-4xl font-bold text-white mb-2">AI Video Gen</h3>
+                                <p class="text-gray-200 text-sm mb-4 max-w-md">Cinematic text-to-video production in
+                                    minutes.</p>
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> 4K
+                                        Resolution</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Avatars</span>
+                                </div>
+                                <button
+                                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-black">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Collapsed Content -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-100 group-[.active]:opacity-0 transition-opacity duration-500">
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <h3
+                                class="text-lg font-bold text-gray-400 tracking-widest uppercase vertical-text whitespace-nowrap rotate-180">
+                                AI Video Gen</h3>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: AI Graphics -->
+                    <div class="service-accordion-item relative overflow-hidden rounded-[2rem] cursor-pointer transition-[flex] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-[1] group bg-gray-50 border border-gray-100 hover:flex-[1.5]"
+                        data-id="3">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Graphics"
+                            class="absolute inset-0 h-full w-full object-cover opacity-0 group-[.active]:opacity-60 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-[.active]:opacity-100 transition-opacity duration-500">
+                        </div>
+
+                        <!-- Expanded Content -->
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-[.active]:opacity-100 transition-opacity duration-500 delay-200">
+                            <div>
+                                <span
+                                    class="text-xs font-bold tracking-widest text-white/80 mb-2 block uppercase">Visual
+                                    Assets</span>
+                                <h3 class="text-4xl font-bold text-white mb-2">AI Graphics</h3>
+                                <p class="text-gray-200 text-sm mb-4 max-w-md">Stunning brand-consistent imagery on
+                                    demand.</p>
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Vector Export</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Brand Aligned</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Fast Gen</span>
+                                </div>
+                                <button
+                                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-black">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Collapsed Content -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-100 group-[.active]:opacity-0 transition-opacity duration-500">
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <h3
+                                class="text-lg font-bold text-gray-400 tracking-widest uppercase vertical-text whitespace-nowrap rotate-180">
+                                AI Graphics</h3>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: AI Call Assistant -->
+                    <div class="service-accordion-item relative overflow-hidden rounded-[2rem] cursor-pointer transition-[flex] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-[1] group bg-gray-50 border border-gray-100 hover:flex-[1.5]"
+                        data-id="4">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Call Assistant"
+                            class="absolute inset-0 h-full w-full object-cover opacity-0 group-[.active]:opacity-60 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-[.active]:opacity-100 transition-opacity duration-500">
+                        </div>
+
+                        <!-- Expanded Content -->
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-[.active]:opacity-100 transition-opacity duration-500 delay-200">
+                            <div>
+                                <span class="text-xs font-bold tracking-widest text-white/80 mb-2 block uppercase">Voice
+                                    AI</span>
+                                <h3 class="text-4xl font-bold text-white mb-2">AI Call Assistant</h3>
+                                <p class="text-gray-200 text-sm mb-4 max-w-md">24/7 AI voice agents handling calls
+                                    automagically.</p>
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Voice Cloning</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Clean Audio</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Multi-Track</span>
+                                </div>
+                                <button
+                                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-black">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Collapsed Content -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-100 group-[.active]:opacity-0 transition-opacity duration-500">
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                                </path>
+                            </svg>
+                            <h3
+                                class="text-lg font-bold text-gray-400 tracking-widest uppercase vertical-text whitespace-nowrap rotate-180">
+                                AI Call Assistant</h3>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: AI Chatbots -->
+                    <div class="service-accordion-item relative overflow-hidden rounded-[2rem] cursor-pointer transition-[flex] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex-[1] group bg-gray-50 border border-gray-100 hover:flex-[1.5]"
+                        data-id="5">
+                        <img src="https://images.unsplash.com/photo-1535378437323-955a6d7350c0?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Chatbots"
+                            class="absolute inset-0 h-full w-full object-cover opacity-0 group-[.active]:opacity-60 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-[.active]:opacity-100 transition-opacity duration-500">
+                        </div>
+
+                        <!-- Expanded Content -->
+                        <div
+                            class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-[.active]:opacity-100 transition-opacity duration-500 delay-200">
+                            <div>
+                                <span class="text-xs font-bold tracking-widest text-white/80 mb-2 block uppercase">24/7
+                                    Support</span>
+                                <h3 class="text-4xl font-bold text-white mb-2">AI Chatbots</h3>
+                                <p class="text-gray-200 text-sm mb-4 max-w-md">Intelligent voice assistants handling
+                                    calls automagically.</p>
+                                <div class="flex flex-wrap gap-3 items-center">
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Natural Voice</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> CRM Sync</span>
+                                    <span
+                                        class="flex items-center text-xs text-white/90 font-medium bg-white/10 px-3 py-1 rounded-full"><span
+                                            class="mr-2">✓</span> Sentiment Analysis</span>
+                                </div>
+                                <button
+                                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-black">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Collapsed Content -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-100 group-[.active]:opacity-0 transition-opacity duration-500">
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+                                </path>
+                            </svg>
+                            <h3
+                                class="text-lg font-bold text-gray-400 tracking-widest uppercase vertical-text whitespace-nowrap rotate-180">
+                                AI Chatbots</h3>
+                        </div>
+                    </div>
+        </section>
+
+
+        <!-- Results Section -->
+        <section id="results" class="py-16 bg-black text-white relative border-y border-white/10">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-6xl font-black mb-12 animate-fade-in-up">Proven Results. Real
+                    Growth.</h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="opacity-0 reveal-on-scroll">
+                        <span class="block text-4xl md:text-6xl font-black text-[#C4A484] mb-2">300%</span>
+                        <span class="text-sm text-gray-400 uppercase tracking-widest">Average ROI
+                            Increase</span>
+                    </div>
+                    <div class="opacity-0 reveal-on-scroll" style="transition-delay: 0.1s;">
+                        <span class="block text-4xl md:text-6xl font-black text-[#C4A484] mb-2">5M+</span>
+                        <span class="text-sm text-gray-400 uppercase tracking-widest">Revenue
+                            Generated</span>
+                    </div>
+                    <div class="opacity-0 reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <span class="block text-4xl md:text-6xl font-black text-[#C4A484] mb-2">200%</span>
+                        <span class="text-sm text-gray-400 uppercase tracking-widest">Growth in Organic
+                            Traffic</span>
+                    </div>
+                    <div class="opacity-0 reveal-on-scroll" style="transition-delay: 0.3s;">
+                        <span class="block text-4xl md:text-6xl font-black text-[#C4A484] mb-2">400%</span>
+                        <span class="text-sm text-gray-400 uppercase tracking-widest">Increase in
+                            Engagement</span>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-gray-400 italic">We focus on measurable success — not empty promises.
+                </div>
+            </div>
+        </section>
+
+        <!-- Redesigned 'Why Choose Us' Section -->
+        <section class="py-16 bg-white relative overflow-hidden" id="why-choose-us">
+            <!-- Background Pattern (Dashed Lines) -->
+            <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+                <svg class="w-full h-full" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="black" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <!-- Heading -->
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-6xl font-black text-black mb-4 tracking-tight">
+                        Why Businesses in Delhi NCR Trust Us?
+                    </h2>
+                    <p class="text-gray-500 text-lg md:text-xl font-light">
+                        Performance-Focused Campaigns
+                    </p>
+                </div>
+
+                <!-- Floating Cards Grid -->
+                <div class="relative max-w-5xl mx-auto h-[800px] md:h-[600px]">
+
+                    <!-- Card 1: Expertise (Top Left) -->
+                    <div class="absolute top-0 left-4 md:left-10 w-full max-w-xs animate-float z-10">
+                        <div
+                            class="bg-white rounded-[2rem] p-8 shadow-2xl border border-yellow-100 rotate-[-4deg] hover:rotate-0 transition-transform duration-500">
+                            <div
+                                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-4xl">
+                                ✨
+                            </div>
+                            <h3 class="text-2xl font-black text-black mb-3">Expertise</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                We leverage over 15 years of experience to deliver high-quality, tailored solutions for
+                                every client.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Custom Solutions (Middle Right) -->
+                    <div
+                        class="absolute top-40 md:top-20 right-4 md:right-10 w-full max-w-xs animate-float-delayed z-20">
+                        <div
+                            class="bg-white rounded-[2rem] p-8 shadow-2xl border border-purple-100 rotate-[3deg] hover:rotate-0 transition-transform duration-500">
+                            <div
+                                class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 text-4xl">
+                                ⚡
+                            </div>
+                            <h3 class="text-2xl font-black text-black mb-3">Custom Solutions</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Each solution is personalized, ensuring that your business gets the exact tools it needs
+                                to succeed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Proven Results (Bottom Left/Center) -->
+                    <div
+                        class="absolute bottom-20 md:bottom-10 left-10 md:left-1/3 w-full max-w-xs animate-float-delayed-2 z-10">
+                        <div
+                            class="bg-white rounded-[2rem] p-8 shadow-2xl border border-pink-100 rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
+                            <div
+                                class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6 text-4xl">
+                                📈
+                            </div>
+                            <h3 class="text-2xl font-black text-black mb-3">Proven Results</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                We don't just promise growth; we deliver measurable ROI and scalable revenue systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Dotted Connection Lines -->
+                    <svg class="absolute inset-0 w-full h-full pointer-events-none z-5 hidden md:block"
+                        viewBox="0 0 1024 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Line from Card 1 (Top Left) to Card 2 (Middle Right) -->
+                        <path d="M 320 150 C 450 150, 550 200, 750 200" stroke="#D1D5DB" stroke-width="2"
+                            stroke-dasharray="6 6" stroke-linecap="round" />
+                        <!-- Line from Card 2 (Middle Right) to Card 3 (Bottom Center) -->
+                        <path d="M 800 400 C 750 500, 600 520, 480 520" stroke="#D1D5DB" stroke-width="2"
+                            stroke-dasharray="6 6" stroke-linecap="round" />
+                    </svg>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        ﻿ <!-- Testimonials Section - Redesigned -->
+        <section class="py-16 bg-white relative overflow-hidden" id="testimonials">
+            <div class="container mx-auto px-6 relative z-10">
+                <!-- Heading -->
+                <div class="text-center mb-12 max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-6xl font-black text-black mb-6">What Our Clients Say</h2>
+                    <p class="text-gray-500 text-base md:text-lg leading-relaxed mb-6">
+                        Real stories from real people! See how our services have transformed their experiences.
+                    </p>
+                    <a href="#contact"
+                        class="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#C4A484] to-[#8B7355] text-white text-base md:text-lg font-bold rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg">
+                        <span>Book Your Free Consultation</span>
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Circular Avatars Grid with Decorative Circles -->
+                <div class="relative max-w-4xl mx-auto h-[400px] mb-16">
+                    <!-- Avatar 1 - Top Left -->
+                    <div class="absolute top-0 left-[5%] md:left-[10%] w-20 h-20 md:w-24 md:h-24">
+                        <div class="relative">
+                            <svg class="absolute -inset-8 w-32 h-32 md:w-40 md:h-40 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 1" data-testimonial="0"
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-orange-200 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Small Dot 1 -->
+                    <div class="absolute top-[15%] left-[25%] w-3 h-3 bg-black rounded-full"></div>
+
+                    <!-- Avatar 2 - Middle Left -->
+                    <div class="absolute top-[35%] left-[15%] md:left-[20%] w-24 h-24 md:w-28 md:h-28">
+                        <div class="relative">
+                            <svg class="absolute -inset-10 w-44 h-44 md:w-48 md:h-48 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 2" data-testimonial="1"
+                                class="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-4 border-yellow-200 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Small Dot 2 -->
+                    <div class="absolute top-[30%] left-[42%] w-2 h-2 bg-black rounded-full"></div>
+
+                    <!-- Avatar 3 - Top Center -->
+                    <div class="absolute top-[8%] left-[35%] md:left-[38%] w-20 h-20 md:w-24 md:h-24">
+                        <div class="relative">
+                            <svg class="absolute -inset-8 w-36 h-36 md:w-40 md:h-40 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 3" data-testimonial="2"
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-gray-300 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Avatar 4 - Center (Featured) -->
+                    <div class="absolute top-[25%] left-[45%] md:left-[46%] w-28 h-28 md:w-32 md:h-32">
+                        <div class="relative">
+                            <svg class="absolute -inset-12 w-52 h-52 md:w-56 md:h-56 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 4" data-testimonial="3"
+                                class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 border-pink-300 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Small Dot 3 -->
+                    <div class="absolute top-[25%] right-[28%] w-2 h-2 bg-black rounded-full"></div>
+
+                    <!-- Avatar 5 - Top Right -->
+                    <div class="absolute top-[5%] right-[15%] md:right-[18%] w-20 h-20 md:w-24 md:h-24">
+                        <div class="relative">
+                            <svg class="absolute -inset-8 w-36 h-36 md:w-40 md:h-40 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 5" data-testimonial="4"
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-gray-300 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Small Dot 4 -->
+                    <div class="absolute top-[18%] right-[8%] w-3 h-3 bg-black rounded-full"></div>
+
+                    <!-- Avatar 6 - Middle Right -->
+                    <div class="absolute top-[40%] right-[8%] md:right-[12%] w-24 h-24 md:w-28 md:h-28">
+                        <div class="relative">
+                            <svg class="absolute -inset-10 w-44 h-44 md:w-48 md:h-48 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 6" data-testimonial="5"
+                                class="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-4 border-gray-300 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Small Dot 5 -->
+                    <div class="absolute bottom-[25%] left-[35%] w-2 h-2 bg-black rounded-full"></div>
+
+                    <!-- Avatar 7 - Bottom Right -->
+                    <div class="absolute bottom-[5%] right-[25%] md:right-[28%] w-20 h-20 md:w-24 md:h-24">
+                        <div class="relative">
+                            <svg class="absolute -inset-8 w-36 h-36 md:w-40 md:h-40 opacity-30" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                    stroke-dasharray="2 4" />
+                            </svg>
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+                                alt="Client 7" data-testimonial="6"
+                                class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-gray-300 relative z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Small Dot 6 -->
+                    <div class="absolute bottom-[15%] right-[12%] w-2 h-2 bg-black rounded-full"></div>
+
+                    <!-- Dotted Circle (Bottom Right - Decorative) -->
+                    <div class="absolute bottom-[8%] right-[5%] w-24 h-24 opacity-20">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                stroke-dasharray="2 4" />
+                        </svg>
+                    </div>
+
+                    <!-- Dotted Circle (Top Right - Decorative) -->
+                    <div class="absolute top-[2%] right-[2%] w-20 h-20 opacity-20">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#D1D5DB" stroke-width="1"
+                                stroke-dasharray="2 4" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial Carousel -->
+                <div class="max-w-3xl mx-auto relative">
+                    <!-- Navigation Arrows -->
+                    <button
+                        class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10 testimonial-prev"
+                        aria-label="Previous testimonial">
+                        <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-600" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <button
+                        class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10 testimonial-next"
+                        aria-label="Next testimonial">
+                        <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-600" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Testimonial Content -->
+                    <div class="testimonial-container overflow-hidden">
+                        <div class="testimonial-wrapper flex transition-transform duration-500 ease-in-out">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    This platform made my experience seamless and enjoyable. The quality of service
+                                    exceeded my expectations!
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    Working with this team transformed our digital presence and significantly increased
+                                    our online revenue.
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    Their SEO and paid campaigns helped us attract high-quality leads consistently.
+                                    Highly
+                                    recommend!
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    The attention to detail and personalized approach made all the difference. Our brand
+                                    visibility has skyrocketed!
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 5 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    Professional, creative, and results-driven. They delivered exactly what we needed to
+                                    scale our business.
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 6 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    Outstanding service! Their strategic approach helped us reach our target audience
+                                    effectively and boost conversions.
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 7 -->
+                            <div class="testimonial-slide w-full flex-shrink-0 px-4">
+                                <p class="text-gray-600 text-base md:text-lg text-center leading-relaxed">
+                                    Exceptional work from start to finish. They understood our vision and brought it to
+                                    life beautifully!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div class="opacity-0 reveal-on-scroll">
+                        <span class="text-gray-500 font-mono text-xs uppercase tracking-[0.2em] mb-2 block">Available
+                            Pan India</span>
+                        <h2 class="text-3xl md:text-6xl font-black tracking-tighter leading-none mb-6">
+                            Let's Grow Your Brand in <span class="text-[#C4A484] italic font-serif">Delhi
+                                NCR</span>
+                        </h2>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
+                            Looking for a trusted Digital Marketing Agency in Delhi NCR to scale your
+                            business? Get in
+                            touch today and let’s build a strategy tailored to your goals.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-[#fffbeb] rounded-full flex items-center justify-center text-[#C4A484]">
+                                    📞</div>
+                                <div>
+                                    <h4 class="font-bold text-black text-lg">Schedule Your Free Strategy
+                                        Consultation
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-[#fffbeb] rounded-full flex items-center justify-center text-[#C4A484]">
+                                    📍</div>
+                                <div>
+                                    <h4 class="font-bold text-black text-lg">Serving Delhi NCR & Pan India
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 md:p-10 rounded-[2.5rem] border border-gray-100 opacity-0 reveal-on-scroll"
+                        style="transition-delay: 0.2s;">
+                        <form class="space-y-6" id="contactForm">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-gray-700 ml-1">First Name</label>
+                                    <input type="text" placeholder="John"
+                                        class="w-full px-6 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-[#C4A484] focus:ring-1 focus:ring-[#C4A484] transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-gray-700 ml-1">Last Name</label>
+                                    <input type="text" placeholder="Doe"
+                                        class="w-full px-6 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-[#C4A484] focus:ring-1 focus:ring-[#C4A484] transition-all">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-gray-700 ml-1">Email Address</label>
+                                <input type="email" placeholder="john@example.com"
+                                    class="w-full px-6 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-[#C4A484] focus:ring-1 focus:ring-[#C4A484] transition-all">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-gray-700 ml-1">Message</label>
+                                <textarea rows="4" placeholder="Tell us about your project..."
+                                    class="w-full px-6 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:border-[#C4A484] focus:ring-1 focus:ring-[#C4A484] transition-all resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-black text-white font-bold py-4 rounded-xl hover:bg-[#1D0F20] transition-colors flex items-center justify-center gap-3 group">
+                                <span>Start Your Growth Journey</span>
+                                <span class="group-hover:translate-x-1 transition-transform">→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - Redesigned -->
+    <footer class="bg-gradient-to-b from-black to-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-black tracking-tighter">
+                        DIGITAL <span class="text-[#C4A484]">MARKETING</span>
+                    </h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        ROI-driven digital marketing agency in Delhi NCR helping E-commerce, Healthcare, and Fashion
+                        brands scale through data-driven strategies.
+                    </p>
+                    <!-- Social Links -->
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 hover:bg-[#C4A484] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                            aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 hover:bg-[#C4A484] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                            aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 hover:bg-[#C4A484] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                            aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/10 hover:bg-[#C4A484] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                            aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                About Us
+                            </a></li>
+                        <li><a href="our-services.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Our Services
+                            </a></li>
+                        <li><a href="#industries"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Industries
+                            </a></li>
+                        <li><a href="#results"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Case Studies
+                            </a></li>
+                        <li><a href="#testimonials"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Testimonials
+                            </a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Contact
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold text-white">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="seo-optimization.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                SEO Optimization
+                            </a></li>
+                        <li><a href="paid-advertising.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Paid Advertising
+                            </a></li>
+                        <li><a href="social-media-marketing.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Social Media Marketing
+                            </a></li>
+                        <li><a href="content-marketing.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Content Marketing
+                            </a></li>
+                        <li><a href="email-marketing.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Email Marketing
+                            </a></li>
+                        <li><a href="youtube-marketing.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                YouTube Marketing
+                            </a></li>
+                        <li><a href="ai-automation.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                AI & Automation
+                            </a></li>
+                        <li><a href="web-development.html"
+                                class="text-gray-400 hover:text-[#C4A484] transition-colors text-sm flex items-center gap-2 group">
+                                <span
+                                    class="w-1 h-1 bg-[#C4A484] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                Web Development
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold text-white">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#C4A484] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <p class="text-gray-400 text-sm">Delhi NCR, India<br>Serving Pan India</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#C4A484] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:info@digitalmarketing.com"
+                                class="text-gray-400 hover:text-[#C4A484] text-sm transition-colors">info@digitalmarketing.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="pt-4">
+                        <h4 class="text-sm font-bold text-white mb-3">Subscribe to Newsletter</h4>
+                        <form class="flex flex-col gap-3">
+                            <input type="email" placeholder="Your email"
+                                class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-full text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#C4A484] transition-colors">
+                            <button type="submit"
+                                class="w-full px-6 py-2 bg-gradient-to-r from-[#C4A484] to-[#8B7355] text-white text-sm font-bold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-500 text-sm">
+                        © 2026 Digital Marketing Agency. All rights reserved.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-500 hover:text-[#C4A484] text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-[#C4A484] text-sm transition-colors">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-500 hover:text-[#C4A484] text-sm transition-colors">Cookie
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
