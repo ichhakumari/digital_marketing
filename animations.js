@@ -340,5 +340,147 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // ===== ANIMATED SERVICE CARDS OBSERVER =====
+    const revealCards = document.querySelectorAll('.reveal');
+    if (revealCards.length > 0) {
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('show');
+                    }, index * 120);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        revealCards.forEach(card => revealObserver.observe(card));
+
+    }
+
+
+    // ===== TESTIMONIAL SLIDER REDESIGN LOGIC =====
+    const testTrack = document.querySelector('.testimonial-track');
+    const testSlides = document.querySelectorAll('.test-slide');
+    const testPrev = document.getElementById('test-prev');
+    const testNext = document.getElementById('test-next');
+    const testProgress = document.getElementById('test-progress');
+
+    if (testTrack && testSlides.length > 0) {
+        let testIndex = 0;
+        const totalTestSlides = testSlides.length;
+
+        function updateTestSlider() {
+            if (!testSlides[0]) return;
+
+            // Calculate movement based on card width + gap
+            const gap = 24;
+            const slideWidth = testSlides[0].offsetWidth || 450;
+            const moveAmount = (slideWidth + gap) * testIndex;
+
+            gsap.to(testTrack, {
+                x: -moveAmount,
+                duration: 0.6,
+                ease: "power2.out"
+            });
+
+            // Update progress bar
+            const progress = ((testIndex + 1) / totalTestSlides) * 100;
+            if (testProgress) {
+                testProgress.style.width = `${progress}%`;
+            }
+
+            // Clean slider state
+            testSlides.forEach((slide) => {
+                slide.style.opacity = "1";
+                slide.style.transform = "scale(1)";
+            });
+        }
+
+        testNext.addEventListener('click', () => {
+            if (testIndex < totalTestSlides - 1) {
+                testIndex++;
+            } else {
+                testIndex = 0; // Circular
+            }
+            updateTestSlider();
+        });
+
+        testPrev.addEventListener('click', () => {
+            if (testIndex > 0) {
+                testIndex--;
+            } else {
+                testIndex = totalTestSlides - 1; // Circular
+            }
+            updateTestSlider();
+        });
+
+        // Initialize
+        setTimeout(updateTestSlider, 100); // Small delay to ensure layout is ready
+
+        // ===== DRAG & SWIPE LOGIC =====
+        let isDragging = false;
+        let startX = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+
+        const viewport = document.querySelector('.testimonial-view');
+
+        if (viewport) {
+            // Mouse Events
+            viewport.addEventListener('mousedown', dragStart);
+            window.addEventListener('mouseup', dragEnd); // Use window for better UX
+            window.addEventListener('mousemove', dragAction);
+
+            // Touch Events
+            viewport.addEventListener('touchstart', dragStart, { passive: true });
+            window.addEventListener('touchend', dragEnd);
+            window.addEventListener('touchmove', dragAction, { passive: false });
+        }
+
+        function dragStart(e) {
+            isDragging = true;
+            startX = getPositionX(e);
+            viewport.style.cursor = 'grabbing';
+            const slideWidth = testSlides[0].offsetWidth || 450;
+            prevTranslate = -((slideWidth + 24) * testIndex);
+
+            gsap.killTweensOf(testTrack);
+        }
+
+        function dragAction(e) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(e);
+            const diff = currentPosition - startX;
+            currentTranslate = prevTranslate + diff;
+
+            gsap.set(testTrack, { x: currentTranslate });
+        }
+
+        function dragEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            viewport.style.cursor = 'grab';
+
+            const movedBy = currentTranslate - prevTranslate;
+
+            // Shift index if dragged enough (lower threshold for better feel)
+            if (movedBy < -50 && testIndex < totalTestSlides - 1) {
+                testIndex += 1;
+            } else if (movedBy > 50 && testIndex > 0) {
+                testIndex -= 1;
+            }
+
+            updateTestSlider();
+        }
+
+        function getPositionX(e) {
+            return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+        }
+
+        // Responsive handling
+        window.addEventListener('resize', updateTestSlider);
+    }
+
     console.log('✨ Animations loaded successfully!');
 });

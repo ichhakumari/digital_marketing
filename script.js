@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize on load
     initServicesAccordion();
 
-    // Contact Form Handler
+    // Contact Form Handler - Index Page
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -141,6 +141,30 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.classList.remove('bg-green-600');
                 }, 3000);
             }, 1500);
+        });
+    }
+
+    // Contact Form Handler - Web Development Page (WhatsApp Integration)
+    const contactFormWeb = document.getElementById('contactFormWeb');
+    if (contactFormWeb) {
+        contactFormWeb.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('webName').value;
+            const email = document.getElementById('webEmail').value;
+            const url = document.getElementById('webUrl').value;
+            const message = document.getElementById('webMessage').value;
+
+            const waNumber = "919870271198";
+            const text = `*New Website Audit Request*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Website:* ${url}%0A*Message:* ${message}`;
+
+            const waUrl = `https://wa.me/${waNumber}?text=${text}`;
+
+            // Open WhatsApp
+            window.open(waUrl, '_blank');
+
+            // Reset form
+            contactFormWeb.reset();
         });
     }
 
